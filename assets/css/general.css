@@ -1,0 +1,476 @@
+/***
+=== General ===
+***/
+
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.btn-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0 !important;
+}
+
+a.btn-square {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    border: 2px solid #000;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 0px !important;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .08em;
+    transition: all 0.35s ease 0s;
+}
+
+a.btn-square:hover {
+    background-color: #000;
+    color: #fff !important;
+}
+
+.btn-white {
+    color: white !important;
+    border-color: white !important;
+}
+
+a.btn-white:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+
+/*-------------
+ 	Header
+-------------*/
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 40px 100px 0;
+}
+
+.dark-header a {
+    color: #000 !important;
+}
+
+header h2 {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+}
+
+header a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+header a:hover {
+    opacity: 0.6;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav li:first-child {
+    margin-left: 0;
+}
+
+header nav li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
+}
+
+
+/*-------------
+ 	Hero section / Jumbotron
+-------------*/
+
+.jumbotron {
+    background: url(../images/hero.png) !important;
+    min-height: 95vh;
+    border-radius: 0 !important;
+    text-align: left;
+}
+
+.small-jumbotron {
+    background: url(../images/hero.png) !important;
+    min-height: 55vh !important;
+    border-radius: 0 !important;
+}
+
+.home-jumbotron {
+    background: url(../images/hero.png);
+}
+
+.career-jumbotron {
+    background: url(../images/career.png) !important;
+}
+
+.press-jumbotron {
+    background: url(../images/press.png) !important;
+    background-position: bottom !important;
+}
+
+.about-jumbotron {
+    background: url(../images/about.png) !important;
+    background-position: bottom !important;
+}
+
+.hero-container {
+    margin: 30vh 10% auto 10% !important;
+    max-width: 800px;
+    color: #fff;
+}
+
+.hero-container h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.hero-container p {
+    opacity: 0.8 !important;
+}
+
+@media screen and (max-width: 500px) {
+    .hero-container {
+        text-align: center;
+        margin: 150px 0px auto 0px !important;
+    }
+    .jumbotron {
+        background-position: center !important;
+        min-height: 80vh;
+    }
+    .hero-container h1 {
+        font-size: 42px;
+    }
+    .hero-container p {
+        font-size: 16px;
+    }
+}
+
+
+/* Introduction to Volta */
+
+.about-content {
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 650px;
+}
+
+.second-container {
+    margin-top: 150px !important;
+}
+
+.embed-responsive {
+    margin-top: 50px;
+    max-width: 650px;
+    margin: 50px auto;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    color: #000;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2.5px;
+    padding-top: 7.5px;
+}
+
+.img-fluid {
+    margin-top: 25px;
+}
+
+p.desc {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+p.press-desc {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    max-width: 650px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-content {
+        padding: 75px 20px 75px 20px;
+        text-align: left !important;
+    }
+    .about-content h1 {
+        text-align: left;
+    }
+}
+
+
+/*-------------
+ 	Press
+-------------*/
+
+
+/* What we do Section */
+
+.press-content {
+    padding: 0px 0 75px 0;
+    margin: 0 auto;
+    max-width: 1050px;
+    text-align: center;
+}
+
+.press-content h1 {
+    font-size: 36px;
+    color: #000;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.press-title {
+    padding-bottom: 15px !important;
+    padding-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .press-content {
+        text-align: center;
+    }
+    .press-content h1 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .press-content {
+        padding: 75px 20px 75px 20px;
+    }
+}
+
+#updates-row {
+    margin-bottom: 65px;
+}
+
+.fab {
+    color: #fff;
+    font-size: 32px;
+    padding: 0 7.5px;
+    opacity: 0.8;
+}
+
+.fab:hover {
+    opacity: 1;
+}
+
+.card {
+    text-align: left !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.card-body {
+    padding: 0!important;
+    text-align: left!important;
+}
+
+.card-title {
+    padding-top: 15px;
+    margin-bottom: 2.5px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+.card-source {
+    padding-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
+    color: #696969;
+    font-weight: bold;
+}
+
+.card-text {
+    padding-bottom: 5px;
+    opacity: 0.8;
+}
+
+.card-text i {
+    font-size: 12px;
+}
+
+.card {
+    margin-bottom: 8px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .2), 0 4px 16px 0 rgba(0, 0, 0, .05)
+}
+
+.card-body {
+    padding: 20px 50px 10px 50px;
+}
+
+.card-body p {
+    margin-bottom: 0;
+    font-size: 14px
+}
+
+.card-body a {
+    color: #000 !Important;
+    opacity: 0.8;
+}
+
+.card-body a:hover {
+    text-decoration: underline
+}
+
+.card {
+    border-radius: 0px !important;
+}
+
+.card-img-top {
+    border-radius: 0px !important;
+}
+
+
+/*-------------
+ 	Banner
+-------------*/
+
+.banner-container {
+    background: url(../images/banner.png);
+    color: #fff;
+    min-height: 450px;
+}
+
+.banner-content {
+    margin: 0px auto;
+    text-align: center;
+    padding: 125px 0;
+    max-width: 750px;
+}
+
+.banner-content h1 {
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.banner-content p {
+    margin-bottom: 35px;
+    opacity: 0.8;
+}
+
+
+/***
+=== Footer ===
+***/
+
+#myFooter {
+    background-color: #fff;
+    color: #6d6f7b !important;
+}
+
+.footer-container {
+    margin: 75px auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: #000 !important;
+    letter-spacing: 0.05em;
+    font-weight: bold !important;
+    margin-top: 15px;
+}
+
+#myFooter h2 a {
+    font-size: 50px;
+    color: #000;
+    opacity: 0.8;
+    text-align: center;
+    color: #000 !important;
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: bold;
+}
+
+#myFooter p {
+    color: #000;
+    opacity: 0.2;
+    font-size: 14px;
+}
+
+#myFooter a {
+    color: #6d6f7b;
+    text-decoration: none !important;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none !important;
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+#myFooter {
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+}
